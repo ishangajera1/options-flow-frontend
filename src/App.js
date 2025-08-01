@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://options-flow-backend.onrender.com")
+    fetch("https://options-flow-backend.onrender.com/api/options-flow")
       .then(res => res.json())
       .then(json => setData(json));
   }, []);
