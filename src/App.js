@@ -5,7 +5,7 @@ export default function App() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch("https://your-backend.onrender.com/api/options-flow")
+    fetch("https://options-flow-frontend.vercel.app/api/options-flow")
       .then(res => {
         if (!res.ok) return res.json().then(err => { throw new Error(err.error); });
         return res.json();
